@@ -1,4 +1,4 @@
-const restaurantsData = [
+export const restaurantsData = [
     {
       info: {
         id:1,
@@ -73,5 +73,8 @@ const restaurantsData = [
     },
   ];
   
-  export default restaurantsData;
+export const CLOUDINIRY_IMAGE_ID="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/"  
+
+export const FETCH_MENU_URL="https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.912185&lng=75.783304&restaurantId=";
+  
   
