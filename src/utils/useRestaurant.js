@@ -16,10 +16,10 @@ const useRestaurant = (id) => {
       
       console.log('Fetched result:', result);
 
-      const restaurantInfo = result?.data?.cards[2]?.card?.card?.info || {};
+      const restaurantInfo = result?.data?.cards[2]?.card?.card?.info;
       setRestaurantData(restaurantInfo);
 
-      const menuItems = result?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
+      const menuItems = result?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]
         .card?.card?.itemCards || [];
       setRestWithId(menuItems);
 

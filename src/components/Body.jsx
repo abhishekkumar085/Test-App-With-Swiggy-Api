@@ -22,13 +22,13 @@ const Body = () => {
       );
       const jsonData = await response.json();
       console.log(jsonData.data, 'dataaaa');
-      console.log(
-        jsonData.data.success.cards[4].gridWidget.gridElements.infoWithStyle
-          .restaurants,
-        'data'
-      );
+      // console.log(
+      //   jsonData.data.success.cards[4].gridWidget.gridElements.infoWithStyle
+      //     .restaurants,
+      //   'data'
+      // );
       const fetchedRestaurants =
-        jsonData?.data?.success?.cards[4]?.gridWidget?.gridElements
+        jsonData?.data?.success?.cards[3]?.gridWidget?.gridElements
           ?.infoWithStyle?.restaurants;
       setFilteredRestaurant(fetchedRestaurants);
       setAllRestaurants(fetchedRestaurants);
